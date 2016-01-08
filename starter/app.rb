@@ -16,7 +16,7 @@ get '/add' do
     erb :add
 end
 
-#show histroy of growls
+#show history of growls
 get '/growls' do
     @growl= session[:past_growls]
     erb :growls
