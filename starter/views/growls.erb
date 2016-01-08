@@ -1,8 +1,3 @@
-<form action="/growls" method="post">
-    
-    <textarea name="growlhere" maxlength="142"><%= @growl %></textarea>
-
-    <input type="submit" value="Submit">
-
-</form>
-
+<% @growl.each  do |each_growl| %>
+    <%= each_growl %>
+<% end %>
